@@ -1,6 +1,6 @@
 "use client";
 import { Link } from "@chakra-ui/next-js";
-import { Stack, Flex } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 import { FaRegUserCircle } from "react-icons/fa";
 import MyMenuItem from "./MyMenuItem";
 
@@ -28,11 +28,7 @@ const devsMenuItems = [
 
 export const MenuLinks = () => {
 	return (
-		<Stack
-			direction={{ base: "column", lg: "row" }}
-			spacing="12px"
-			align="center"
-		>
+		<>
 			<Link href="#">Home</Link>
 			<MyMenuItem title="Blockchain" items={blockchainMenuItems} divider={3} />
 			<MyMenuItem title="Tokens" items={tokenMenuItems} />
@@ -44,6 +40,6 @@ export const MenuLinks = () => {
 					Sign In <FaRegUserCircle />
 				</Flex>
 			</Link>
-		</Stack>
+		</>
 	);
 };
