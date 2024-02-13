@@ -1,17 +1,27 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Intro
+
+This is the frontend for my [Etherscan](https://etherscan.io/) clone. It is a simple blockchain explorer that allows you to search for blocks, transactions, and addresses.
+
+You can find the backend at: [https://github.com/lucadidomenico/blockchain_explorer](https://github.com/lucadidomenico/blockchain_explorer)
+
+## YouTube Playlist (ITA)
+
+👉🏻 [https://www.youtube.com/playlist?list=PLpwebJpi_tu3rYba_zooIZSpv1410rQiV](https://www.youtube.com/playlist?list=PLpwebJpi_tu3rYba_zooIZSpv1410rQiV)
 
 ## Getting Started
 
-First, run the development server:
+### Install
+
+```bash
+git clone https://github.com/lucadidomenico/blockchain_explorer_frontend
+cd ./blockchain_explorer_frontend
+npm install
+```
+
+### Run development version
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -21,6 +31,8 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
 ## Learn More
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 To learn more about Next.js, take a look at the following resources:
 
