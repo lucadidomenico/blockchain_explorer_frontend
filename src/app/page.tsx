@@ -33,7 +33,11 @@ export default function Home() {
 				<Header />
 				<Search />
 				<BannerData />
-				<Flex direction={{ base: "column", md: "row" }}>
+				<Flex
+					direction={{ base: "column", md: "row" }}
+					ml={{ base: 2, lg: 40 }}
+					mr={{ base: 2, lg: 40 }}
+				>
 					<LatestBlocks />
 					<LatestTransactions />
 				</Flex>

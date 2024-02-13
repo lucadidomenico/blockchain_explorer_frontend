@@ -9,8 +9,8 @@ const LatestBlocks = () => {
 			border="1px solid #E2E8F0"
 			borderRadius="md"
 			mt={4}
-			ml={2}
-			mr={2}
+			ml={{ base: 2, lg: 0 }}
+			mr={{ base: 2, lg: 2 }}
 			w={{ md: "50%" }}
 		>
 			<Flex align="center" justify="start" p={2}>
