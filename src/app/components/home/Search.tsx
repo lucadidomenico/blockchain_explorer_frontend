@@ -11,7 +11,6 @@ export const Search = () => {
 			pt={{ base: 10, md: 20 }}
 			pb={{ base: 10, md: 20 }}
 			pl={{ base: 2, lg: 40 }}
-			h="40%"
 			direction={"column"}
 			justify={"start"}
 			gap={6}

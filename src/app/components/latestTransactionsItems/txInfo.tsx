@@ -1,8 +1,22 @@
-import { Flex, Grid, Heading, Text } from "@chakra-ui/react";
+import { Flex, Grid, Heading, Text, useMediaQuery } from "@chakra-ui/react";
 import { FaReceipt } from "react-icons/fa";
 
 const TransactionInfo = () => {
-	return (
+	const [isMobile] = useMediaQuery("(max-width: 30em)");
+
+	return isMobile ? (
+		<>
+			<Flex direction="column">
+				<Heading as="h4" size="sm">
+					0x643287462...
+				</Heading>
+				<Text>Time</Text>
+				<Text>From $address</Text>
+				<Text>To $address</Text>
+				<Text>12.324 ETH</Text>
+			</Flex>
+		</>
+	) : (
 		<Grid templateColumns="0.5fr 1fr 2fr 1fr" gap={2} p={2}>
 			<Flex align="center" justify="center">
 				<FaReceipt size="1.5em" />
