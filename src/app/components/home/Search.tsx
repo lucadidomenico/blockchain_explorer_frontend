@@ -8,9 +8,9 @@ export const Search = () => {
 	return (
 		<Flex
 			w="100%"
-			pl={{ base: 10, md: 20 }}
 			pt={{ base: 10, md: 20 }}
 			pb={{ base: 10, md: 20 }}
+			pl={{ base: 2, lg: 40 }}
 			h="40%"
 			direction={"column"}
 			justify={"start"}
@@ -24,6 +24,7 @@ export const Search = () => {
 				<Input
 					placeholder="Search by Address or Transaction Hash"
 					w={{ base: "80%", md: "50%" }}
+					color="white"
 				/>
 				<Button>
 					<FaSearch />

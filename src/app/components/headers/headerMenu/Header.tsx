@@ -17,6 +17,8 @@ export const Header = () => {
 			p={2}
 			direction={{ base: "column", md: "row" }}
 			align="center"
+			pl={{ base: 2, lg: 40 }}
+			pr={{ base: 2, lg: 40 }}
 		>
 			<Flex w="100%" justify="space-between">
 				<Logo />

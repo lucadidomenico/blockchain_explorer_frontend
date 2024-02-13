@@ -12,10 +12,10 @@ export const EthereumPrice = () => {
 		fetchPrice();
 	}, []);
 	return (
-		<Flex w={"100%"} p={2}>
-			<Text fontWeight="bold">ETH Price: </Text>
+		<Flex w={"100%"} p={2} pl={{ base: 2, lg: 40 }}>
+			<Text color={"#6C757D"}>ETH Price: </Text>
 			<span style={{ color: "#066A9C", fontWeight: "bold" }}>
-				{`$${price}` || "Loading..."}
+				{price ? `$${price}` : "Loading..."}
 			</span>
 		</Flex>
 	);

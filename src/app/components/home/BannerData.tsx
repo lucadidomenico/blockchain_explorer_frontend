@@ -25,8 +25,6 @@ const BannerData = () => {
 			border="1px solid #E2E8F0"
 			backgroundColor={"white"}
 			mt={-4}
-			ml={{ base: 2, lg: 40 }}
-			mr={{ base: 2, lg: 40 }}
 			pt={4}
 			borderRadius="md"
 		>

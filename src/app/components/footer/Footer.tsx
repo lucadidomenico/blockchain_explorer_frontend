@@ -21,6 +21,8 @@ const Footer = () => {
 			backgroundColor={"#F8F9FA"}
 			pb={{ base: 4, md: 0 }}
 			pt={{ base: 4, md: 0 }}
+			pl={{ base: 2, lg: 40 }}
+			pr={{ base: 2, lg: 40 }}
 			px={2}
 		>
 			<Flex direction="row" gap={{ base: 2, md: 4 }}>

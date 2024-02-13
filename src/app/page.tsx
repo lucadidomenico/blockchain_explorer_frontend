@@ -30,8 +30,14 @@ export default function Home() {
 				<Divider orientation="horizontal" />
 				<Header />
 				<Search />
-				<BannerData />
-				<Flex direction={{ base: "column", md: "row" }}>
+				<Box pl={{ base: 2, lg: 40 }} pr={{ base: 2, lg: 40 }}>
+					<BannerData />
+				</Box>
+				<Flex
+					direction={{ base: "column", md: "row" }}
+					pl={{ base: 2, lg: 40 }}
+					pr={{ base: 2, lg: 40 }}
+				>
 					<LatestBlocks />
 					<LatestTransactions />
 				</Flex>
