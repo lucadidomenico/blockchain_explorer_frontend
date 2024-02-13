@@ -46,6 +46,11 @@ const options = {
 			},
 		},
 	},
+	plugins: {
+		legend: {
+			display: false,
+		},
+	},
 };
 
 const AVGTransactionValue = () => {
@@ -56,8 +61,18 @@ const AVGTransactionValue = () => {
 			gap={1}
 			h="full"
 		>
-			<Box w="100%" gridColumnStart={1} gridColumnEnd={3} h="full">
-				<Text fontWeight="bold">Average Transaction Value</Text>
+			<Box
+				w="100%"
+				gridColumnStart={1}
+				gridColumnEnd={3}
+				h="full"
+				display="flex"
+				flexDirection="column"
+				alignItems={{ base: "center", md: "start" }}
+			>
+				<Text fontWeight="bold" textAlign={{ base: "center", md: "start" }}>
+					Average Transaction Value
+				</Text>
 				<Line data={data} options={options} />
 			</Box>
 		</Grid>
