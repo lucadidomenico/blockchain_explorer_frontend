@@ -1,4 +1,4 @@
-import { Flex } from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 
 export const EthereumPrice = () => {
@@ -13,7 +13,10 @@ export const EthereumPrice = () => {
 	}, []);
 	return (
 		<Flex w={"100%"} p={2}>
-			ETH Price: ${price || "Loading..."}
+			<Text fontWeight="bold">ETH Price: </Text>
+			<span style={{ color: "#066A9C", fontWeight: "bold" }}>
+				{`$${price}` || "Loading..."}
+			</span>
 		</Flex>
 	);
 };
