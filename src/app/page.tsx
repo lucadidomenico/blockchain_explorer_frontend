@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import { Header } from "./components/headers/headerMenu/Header";
 import { EthereumPrice } from "./components/headers/ethPrice/EthereumPrice";
 import { Search } from "./components/home/Search";
+import BannerData from "./components/home/BannerData";
 
 export default function Home() {
 	return (
@@ -12,6 +13,7 @@ export default function Home() {
 				<Divider orientation="horizontal" />
 				<Header />
 				<Search />
+				<BannerData />
 			</Box>
 		</main>
 	);
