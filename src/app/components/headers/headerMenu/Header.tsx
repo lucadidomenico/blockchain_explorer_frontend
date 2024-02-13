@@ -8,7 +8,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 export const Header = () => {
 	const [isOpen, setIsOpen] = React.useState(false);
-	const [isLargerThan48] = useMediaQuery("(min-width: 48em)");
+	const [isLargerThan64] = useMediaQuery("(min-width: 64em)");
 	const toggle = () => setIsOpen(!isOpen);
 
 	return (
@@ -20,15 +20,15 @@ export const Header = () => {
 		>
 			<Flex w="100%" justify="space-between">
 				<Logo />
-				{!isLargerThan48 && (
+				{!isLargerThan64 && (
 					<Button onClick={toggle}>
 						<RxHamburgerMenu />
 					</Button>
 				)}
 			</Flex>
-			{isLargerThan48 ? (
+			{isLargerThan64 ? (
 				<Stack
-					direction={{ base: "column", lg: "row" }}
+					direction={{ base: "column", md: "row" }}
 					spacing="12px"
 					align="center"
 				>
