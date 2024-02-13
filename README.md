@@ -2,7 +2,7 @@
 
 This is the frontend for my [Etherscan](https://etherscan.io/) clone. It is a simple blockchain explorer that allows you to search for blocks, transactions, and addresses.
 
-You can find the backend at: [https://github.com/lucadidomenico/blockchain_explorer](https://github.com/lucadidomenico/blockchain_explorer)
+You can find the backend at: [https://github.com/lucadidomenico/blockchain_explorer_backend](https://github.com/lucadidomenico/blockchain_explorer_backend)
 
 ## YouTube Playlist (ITA)
 
