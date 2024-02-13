@@ -13,11 +13,9 @@ import { Spinner } from "@chakra-ui/react";
 
 export default function Home() {
 	const [isLoading, setIsLoading] = useState(true);
-
 	useEffect(() => {
 		setIsLoading(false);
 	}, []);
-
 	if (isLoading) {
 		return (
 			<Flex justify="center" align="center" height="100vh">
@@ -33,11 +31,7 @@ export default function Home() {
 				<Header />
 				<Search />
 				<BannerData />
-				<Flex
-					direction={{ base: "column", md: "row" }}
-					ml={{ base: 2, lg: 40 }}
-					mr={{ base: 2, lg: 40 }}
-				>
+				<Flex direction={{ base: "column", md: "row" }}>
 					<LatestBlocks />
 					<LatestTransactions />
 				</Flex>
