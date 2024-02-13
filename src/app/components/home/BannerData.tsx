@@ -23,7 +23,11 @@ const BannerData = () => {
 			gap={1}
 			h="full"
 			border="1px solid #E2E8F0"
-			mt={2}
+			backgroundColor={"white"}
+			mt={-4}
+			ml={2}
+			mr={2}
+			pt={4}
 			borderRadius="md"
 		>
 			<EtherPrice />
@@ -47,7 +51,11 @@ const BannerData = () => {
 			gap={2}
 			justifyContent={"start"}
 			border="1px solid #E2E8F0"
-			mt={2}
+			backgroundColor={"white"}
+			mt={-4}
+			ml={2}
+			mr={2}
+			pt={4}
 			borderRadius="md"
 		>
 			<EtherPrice />
