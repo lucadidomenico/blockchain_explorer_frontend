@@ -1,5 +1,5 @@
 import { Divider, Flex, Grid, Heading, Text } from "@chakra-ui/react";
-import BlockInfo from "../latestBlocksItems/blockInfo";
+import BlockInfo from "./latestBlocksItems/blockInfo";
 
 const LatestBlocks = () => {
 	const blockInfo = [1, 2, 3, 4, 5];

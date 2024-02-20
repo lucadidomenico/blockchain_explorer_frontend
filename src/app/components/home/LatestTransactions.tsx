@@ -1,5 +1,5 @@
 import { Divider, Flex, Grid, Heading, Text } from "@chakra-ui/react";
-import TransactionInfo from "../latestTransactionsItems/txInfo";
+import TransactionInfo from "./latestTransactionsItems/txInfo";
 
 const LatestTransactions = () => {
 	const txInfo = [1, 2, 3, 4, 5];
