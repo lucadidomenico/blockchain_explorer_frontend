@@ -17,7 +17,6 @@ const Footer = () => {
 			justify="space-between"
 			align="center"
 			h="100px"
-			mt={40}
 			backgroundColor={"#F8F9FA"}
 			pb={{ base: 4, md: 0 }}
 			pt={{ base: 4, md: 0 }}

@@ -29,7 +29,7 @@ const devsMenuItems = [
 export const MenuLinks = () => {
 	return (
 		<>
-			<Link href="#">Home</Link>
+			<Link href="/">Home</Link>
 			<MyMenuItem title="Blockchain" items={blockchainMenuItems} divider={3} />
 			<MyMenuItem title="Tokens" items={tokenMenuItems} />
 			<MyMenuItem title="NFTs" items={nftMenuItems} />

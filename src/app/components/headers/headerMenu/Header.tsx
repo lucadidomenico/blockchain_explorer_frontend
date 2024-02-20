@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Button, Flex, Spacer, Stack } from "@chakra-ui/react";
+import { Button, Flex, Stack } from "@chakra-ui/react";
 import Logo from "./Logo";
 import { MenuLinks } from "./MenuLinks";
 import { useMediaQuery } from "@chakra-ui/react";
