@@ -1,4 +1,5 @@
 import { Flex, Grid, Heading, Text, useMediaQuery } from "@chakra-ui/react";
+import Link from "next/link";
 import { FaReceipt } from "react-icons/fa";
 
 const TransactionInfo = () => {
@@ -8,7 +9,7 @@ const TransactionInfo = () => {
 		<>
 			<Flex direction="column">
 				<Heading as="h4" size="sm">
-					0x643287462...
+					<Link href="/txDetails">0x643287462...</Link>
 				</Heading>
 				<Text>Time</Text>
 				<Text>From $address</Text>
@@ -23,7 +24,7 @@ const TransactionInfo = () => {
 			</Flex>
 			<Flex direction={"column"}>
 				<Heading as="h4" size="sm">
-					0x643287462...
+					<Link href="/txDetails">0x643287462...</Link>
 				</Heading>
 				<Text>Time</Text>
 			</Flex>

@@ -20,9 +20,9 @@ const LatestTransactions = () => {
 			</Flex>
 			<Divider />
 			<Flex direction={"column"} p={2}>
-				{txInfo.map((block) => (
+				{txInfo.map((tx) => (
 					<>
-						<TransactionInfo key={block} />
+						<TransactionInfo key={tx} />
 						<Divider />
 					</>
 				))}
