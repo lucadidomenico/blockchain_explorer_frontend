@@ -1,4 +1,5 @@
 import { Flex, Grid, Heading, Text, useMediaQuery } from "@chakra-ui/react";
+import Link from "next/link";
 import { SiHiveBlockchain } from "react-icons/si";
 
 const BlockInfo = () => {
@@ -8,7 +9,7 @@ const BlockInfo = () => {
 		<>
 			<Flex direction="column">
 				<Heading as="h4" size="sm">
-					#123456
+					<Link href="/blockDetails">#123456</Link>
 				</Heading>
 				<Text>Time</Text>
 				<Heading as="h4" size="sm">
@@ -25,7 +26,7 @@ const BlockInfo = () => {
 			</Flex>
 			<Flex direction={"column"}>
 				<Heading as="h4" size="sm">
-					#123456
+					<Link href="/blockDetails">#123456</Link>
 				</Heading>
 				<Text>Time</Text>
 			</Flex>
