@@ -1,6 +1,7 @@
 import { Grid, Icon, Text, Tooltip, Flex } from "@chakra-ui/react";
 import { FiInfo } from "react-icons/fi";
 import { useMediaQuery } from "@chakra-ui/react";
+import Link from "next/link";
 
 interface TxDetailsItemProps {
 	description: string;
@@ -27,7 +28,13 @@ export const TxDetailsItem = ({
 					{title}
 				</Text>
 			</Flex>
-			<Text>{value}</Text>
+			<Text>
+				{title.startsWith("From:") || title.startsWith("To:") ? (
+					<Link href={`/addressDetails`}>{value}</Link>
+				) : (
+					value
+				)}
+			</Text>
 		</Grid>
 	) : (
 		<Flex direction="column">
