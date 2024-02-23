@@ -67,7 +67,7 @@ export const TxDetailsPage = () => {
 			px={{ base: 2, lg: 40 }}
 			direction="column"
 			gap={4}
-			backgroundColor="#FAFBFD"
+			background="linear-gradient(#FAFBFD, #FFFFFF)"
 			minH="100vh"
 		>
 			<TxDetailsHeader />

@@ -38,7 +38,7 @@ export const AddressDetailsPage = () => {
 			px={{ base: 2, lg: 40 }}
 			direction="column"
 			gap={4}
-			backgroundColor="#FAFBFD"
+			backgroundColor="linear-gradient(#FAFBFD, #FFFFFF)"
 			minH="100vh"
 		>
 			<AddressDetailsHeader />

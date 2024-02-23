@@ -1,9 +1,6 @@
 "use client";
 import { Box, Divider, Flex } from "@chakra-ui/react";
 import styles from "@/app/page.module.css";
-import { Header } from "@/app/components/headers/headerMenu/Header";
-import { EthereumPrice } from "@/app/components/headers/ethPrice/EthereumPrice";
-import Footer from "@/app/components/footer/Footer";
 import React, { useState, useEffect } from "react";
 import { Spinner } from "@chakra-ui/react";
 import { AddressDetailsPage } from "../components/addressDetails/addressDetailsPage";
@@ -23,11 +20,7 @@ export default function Page() {
 	return (
 		<main className={styles.main}>
 			<Box w={"100%"}>
-				<EthereumPrice />
-				<Divider orientation="horizontal" />
-				<Header />
 				<AddressDetailsPage />
-				<Footer />
 			</Box>
 		</main>
 	);

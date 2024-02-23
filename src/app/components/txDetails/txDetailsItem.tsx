@@ -1,7 +1,8 @@
 import { Grid, Icon, Text, Tooltip, Flex } from "@chakra-ui/react";
 import { FiInfo } from "react-icons/fi";
 import { useMediaQuery } from "@chakra-ui/react";
-import Link from "next/link";
+import NextLink from "next/link";
+import { Link } from "@chakra-ui/react";
 
 interface TxDetailsItemProps {
 	description: string;
@@ -30,7 +31,14 @@ export const TxDetailsItem = ({
 			</Flex>
 			<Text>
 				{title.startsWith("From:") || title.startsWith("To:") ? (
-					<Link href={`/addressDetails`}>{value}</Link>
+					<Link
+						as={NextLink}
+						href="/addressDetails"
+						textDecoration="underline"
+						color="blue"
+					>
+						{value}
+					</Link>
 				) : (
 					value
 				)}
@@ -49,7 +57,14 @@ export const TxDetailsItem = ({
 				</Text>
 			</Flex>
 			{title.startsWith("From:") || title.startsWith("To:") ? (
-				<Link href={`/addressDetails`}>{value}</Link>
+				<Link
+					as={NextLink}
+					href="/addressDetails"
+					textDecoration="underline"
+					color="blue"
+				>
+					{value}
+				</Link>
 			) : (
 				value
 			)}

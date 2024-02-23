@@ -23,11 +23,7 @@ export default function Page() {
 	return (
 		<main className={styles.main}>
 			<Box w={"100%"}>
-				<EthereumPrice />
-				<Divider orientation="horizontal" />
-				<Header />
 				<TxDetailsPage />
-				<Footer />
 			</Box>
 		</main>
 	);

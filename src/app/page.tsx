@@ -1,13 +1,10 @@
 "use client";
-import { Box, Divider, Flex } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 import styles from "./page.module.css";
-import { Header } from "./components/headers/headerMenu/Header";
-import { EthereumPrice } from "./components/headers/ethPrice/EthereumPrice";
 import { Search } from "./components/home/Search";
 import BannerData from "./components/home/BannerData";
 import LatestBlocks from "./components/home/LatestBlocks";
 import LatestTransactions from "./components/home/LatestTransactions";
-import Footer from "./components/footer/Footer";
 import React, { useState, useEffect } from "react";
 import { Spinner } from "@chakra-ui/react";
 
@@ -26,9 +23,6 @@ export default function Home() {
 	return (
 		<main className={styles.main}>
 			<Box w={"100%"}>
-				<EthereumPrice />
-				<Divider orientation="horizontal" />
-				<Header />
 				<Search />
 				<Box pl={{ base: 2, lg: 40 }} pr={{ base: 2, lg: 40 }}>
 					<BannerData />
@@ -41,7 +35,6 @@ export default function Home() {
 					<LatestBlocks />
 					<LatestTransactions />
 				</Flex>
-				<Footer />
 			</Box>
 		</main>
 	);

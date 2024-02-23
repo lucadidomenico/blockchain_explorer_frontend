@@ -104,7 +104,7 @@ export const BlockDetailsPage = () => {
 			px={{ base: 2, lg: 40 }}
 			direction="column"
 			gap={4}
-			backgroundColor="#FAFBFD"
+			backgroundColor="linear-gradient(#FAFBFD, #FFFFFF)"
 		>
 			<BlockDetailsHeader />
 			<Divider orientation="horizontal" />
