@@ -3,7 +3,7 @@ import { Card, CardBody, Heading, Text, Stack } from "@chakra-ui/react";
 interface CardBodyItemProps {
 	heading: string;
 	items: { title: string; value: string }[];
-	width: string;
+	width: any;
 }
 
 export const CardBodyItem = ({ heading, items, width }: CardBodyItemProps) => {

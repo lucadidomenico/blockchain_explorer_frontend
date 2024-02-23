@@ -54,17 +54,23 @@ export const AddressDetailsPage = () => {
 							key={index}
 							items={item.items}
 							heading={item.heading}
-							width={`${100 / items.length}%`}
+							width={{ base: "100%", md: `${100 / items.length}%` }}
 						/>
 					);
 				})}
 			</Flex>
-			<Flex direction="row" gap={3}>
-				<Button>Transactions</Button>
-				<Button>Token Transfers (ERC-20)</Button>
-				<Button>NFT Transfers</Button>
-				<Button>Analytics</Button>
-				<Button>Multichain Portfolio</Button>
+			<Flex
+				direction="row"
+				gap={3}
+				overflowX={{ base: "scroll", md: "hidden" }}
+				whiteSpace="nowrap"
+				pb={2}
+			>
+				<Button minWidth="auto">Transactions</Button>
+				<Button minWidth="auto">Token Transfers (ERC-20)</Button>
+				<Button minWidth="auto">NFT Transfers</Button>
+				<Button minWidth="auto">Analytics</Button>
+				<Button minWidth="auto">Multichain Portfolio</Button>
 			</Flex>
 			<Card>
 				<CardBody>

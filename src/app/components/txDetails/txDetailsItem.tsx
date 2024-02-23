@@ -48,7 +48,11 @@ export const TxDetailsItem = ({
 					{title}
 				</Text>
 			</Flex>
-			<Text>{value}</Text>
+			{title.startsWith("From:") || title.startsWith("To:") ? (
+				<Link href={`/addressDetails`}>{value}</Link>
+			) : (
+				value
+			)}
 		</Flex>
 	);
 };
